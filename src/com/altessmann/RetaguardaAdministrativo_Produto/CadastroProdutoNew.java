@@ -130,11 +130,9 @@ public class CadastroProdutoNew extends javax.swing.JFrame {
         PanelTextEstoq = new javax.swing.JPanel();
         LabelEstoque = new javax.swing.JLabel();
         LabelAtual = new javax.swing.JLabel();
-        LabelMin = new javax.swing.JLabel();
         LabelMax = new javax.swing.JLabel();
         CheckBoxLimite = new javax.swing.JCheckBox();
         TextAtual = new javax.swing.JTextField();
-        TextMin = new javax.swing.JTextField();
         TextMax = new javax.swing.JTextField();
         LabelMax1 = new javax.swing.JLabel();
         TextMax1 = new javax.swing.JTextField();
@@ -282,9 +280,9 @@ public class CadastroProdutoNew extends javax.swing.JFrame {
             .addGroup(PanelProdutoPesLayout.createSequentialGroup()
                 .addGap(5, 5, 5)
                 .addGroup(PanelProdutoPesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1186, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1295, Short.MAX_VALUE)
                     .addGroup(PanelProdutoPesLayout.createSequentialGroup()
-                        .addComponent(TextPesquisaProd, javax.swing.GroupLayout.DEFAULT_SIZE, 431, Short.MAX_VALUE)
+                        .addComponent(TextPesquisaProd, javax.swing.GroupLayout.DEFAULT_SIZE, 540, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(ComboFiltro, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -465,8 +463,8 @@ public class CadastroProdutoNew extends javax.swing.JFrame {
         ButtonNovo.setText("Novo Produto");
 
         ButtonExcluir.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        ButtonExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/close.png"))); // NOI18N
-        ButtonExcluir.setText("Excluir ");
+        ButtonExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/editar.png"))); // NOI18N
+        ButtonExcluir.setText("Editar Cadastro");
         ButtonExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ButtonExcluirActionPerformed(evt);
@@ -474,8 +472,8 @@ public class CadastroProdutoNew extends javax.swing.JFrame {
         });
 
         ButtonEditar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        ButtonEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/editar.png"))); // NOI18N
-        ButtonEditar.setText("Editar");
+        ButtonEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/close24x24.png"))); // NOI18N
+        ButtonEditar.setText("Excluir Cadastro");
         ButtonEditar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ButtonEditarActionPerformed(evt);
@@ -484,7 +482,7 @@ public class CadastroProdutoNew extends javax.swing.JFrame {
 
         ButtonSalvar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         ButtonSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Save.png"))); // NOI18N
-        ButtonSalvar.setText("Salvar");
+        ButtonSalvar.setText("Salvar Cadastro");
         ButtonSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ButtonSalvarActionPerformed(evt);
@@ -838,7 +836,7 @@ public class CadastroProdutoNew extends javax.swing.JFrame {
                     .addComponent(LabelObservacao2)
                     .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 493, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(PanelImagem2, javax.swing.GroupLayout.PREFERRED_SIZE, 144, Short.MAX_VALUE)
+                .addComponent(PanelImagem2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel13Layout.setVerticalGroup(
@@ -870,7 +868,7 @@ public class CadastroProdutoNew extends javax.swing.JFrame {
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel14Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(ButtonNewPromo13, javax.swing.GroupLayout.DEFAULT_SIZE, 643, Short.MAX_VALUE)
+                .addComponent(ButtonNewPromo13, javax.swing.GroupLayout.DEFAULT_SIZE, 756, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel14Layout.setVerticalGroup(
@@ -980,7 +978,7 @@ public class CadastroProdutoNew extends javax.swing.JFrame {
                         .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(LabelValorCus23)
                             .addComponent(TextValorCusto29, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(203, Short.MAX_VALUE))
+                .addContainerGap(316, Short.MAX_VALUE))
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1041,11 +1039,11 @@ public class CadastroProdutoNew extends javax.swing.JFrame {
                     .addGroup(PanelDadosLayout.createSequentialGroup()
                         .addComponent(ButtonNovo, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(3, 3, 3)
-                        .addComponent(ButtonExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ButtonExcluir)
                         .addGap(3, 3, 3)
-                        .addComponent(ButtonEditar, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ButtonEditar)
                         .addGap(3, 3, 3)
-                        .addComponent(ButtonSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ButtonSalvar)
                         .addGap(3, 3, 3)
                         .addComponent(ButtonCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelDadosLayout.createSequentialGroup()
@@ -1100,7 +1098,7 @@ public class CadastroProdutoNew extends javax.swing.JFrame {
                                     .addComponent(ButtonNewSub, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                                 .addComponent(ButtonNewForn1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(ButtonNewUni1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jTabbedPane8))
+                    .addComponent(jTabbedPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap())
         );
         PanelDadosLayout.setVerticalGroup(
@@ -1175,7 +1173,7 @@ public class CadastroProdutoNew extends javax.swing.JFrame {
                         .addGroup(PanelDadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(ButtonSalvar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(ButtonCancelar)
-                            .addComponent(ButtonEditar)))
+                            .addComponent(ButtonEditar, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(ButtonExcluir))
                 .addGap(5, 5, 5))
         );
@@ -1215,9 +1213,6 @@ public class CadastroProdutoNew extends javax.swing.JFrame {
         LabelAtual.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         LabelAtual.setText("Estoque Atual:");
 
-        LabelMin.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        LabelMin.setText("Adicionar ao Estoque:");
-
         LabelMax.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         LabelMax.setText("Minimo:");
 
@@ -1228,11 +1223,6 @@ public class CadastroProdutoNew extends javax.swing.JFrame {
         TextAtual.setBackground(new java.awt.Color(204, 204, 204));
         TextAtual.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         TextAtual.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-
-        TextMin.setEditable(false);
-        TextMin.setBackground(new java.awt.Color(204, 204, 204));
-        TextMin.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        TextMin.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         TextMax.setEditable(false);
         TextMax.setBackground(new java.awt.Color(204, 204, 204));
@@ -1268,32 +1258,27 @@ public class CadastroProdutoNew extends javax.swing.JFrame {
         PanelEstoqueLayout.setHorizontalGroup(
             PanelEstoqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PanelEstoqueLayout.createSequentialGroup()
-                .addGroup(PanelEstoqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(PanelTextEstoq, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(PanelEstoqueLayout.createSequentialGroup()
-                        .addGap(8, 8, 8)
-                        .addGroup(PanelEstoqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(LabelMin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(LabelAtual, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(PanelEstoqueLayout.createSequentialGroup()
-                                .addComponent(LabelMax)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(TextMax)))))
-                .addGap(1, 1, 1)
                 .addGroup(PanelEstoqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PanelEstoqueLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(LabelMax)
+                        .addGap(54, 54, 54)
+                        .addComponent(TextMax))
+                    .addGroup(PanelEstoqueLayout.createSequentialGroup()
+                        .addComponent(PanelTextEstoq, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(1, 1, 1)
                         .addComponent(CheckBoxLimite, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(3, 3, 3))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelEstoqueLayout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(LabelMax1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(TextMax1))
                     .addGroup(PanelEstoqueLayout.createSequentialGroup()
-                        .addGap(4, 4, 4)
-                        .addGroup(PanelEstoqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(TextAtual, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(TextMin))))
+                        .addGap(8, 8, 8)
+                        .addComponent(LabelAtual)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(TextAtual))
+                    .addGroup(PanelEstoqueLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(LabelMax1)
+                        .addGap(50, 50, 50)
+                        .addComponent(TextMax1)))
                 .addGap(5, 5, 5)
                 .addComponent(LabelImEstoque))
             .addGroup(PanelEstoqueLayout.createSequentialGroup()
@@ -1320,14 +1305,12 @@ public class CadastroProdutoNew extends javax.swing.JFrame {
                         .addGroup(PanelEstoqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(TextAtual, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(LabelAtual, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(3, 3, 3)
-                        .addGroup(PanelEstoqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(TextMin, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(LabelMin, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(8, 8, 8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(PanelEstoqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(LabelMax, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(TextMax, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TextMax, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(5, 5, 5)
+                        .addGroup(PanelEstoqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(LabelMax1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(TextMax1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(LabelImEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1670,13 +1653,13 @@ public class CadastroProdutoNew extends javax.swing.JFrame {
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel8Layout.createSequentialGroup()
                                 .addComponent(LabelValorCus19)
-                                .addGap(0, 82, Short.MAX_VALUE))
+                                .addGap(0, 78, Short.MAX_VALUE))
                             .addComponent(TextValorCusto25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(ComboUnidade7, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(ComboUnidade8, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(ComboUnidade9, 0, 439, Short.MAX_VALUE))
+                    .addComponent(ComboUnidade9, 0, 435, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel8Layout.setVerticalGroup(
@@ -1753,7 +1736,7 @@ public class CadastroProdutoNew extends javax.swing.JFrame {
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel12Layout.createSequentialGroup()
                         .addComponent(LabelValorCus21, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 94, Short.MAX_VALUE))
+                        .addGap(0, 90, Short.MAX_VALUE))
                     .addGroup(jPanel12Layout.createSequentialGroup()
                         .addComponent(TextValorCusto27, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())))
@@ -1809,7 +1792,7 @@ public class CadastroProdutoNew extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1310, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2184,7 +2167,6 @@ public class CadastroProdutoNew extends javax.swing.JFrame {
     private javax.swing.JLabel LabelMarca;
     private javax.swing.JLabel LabelMax;
     private javax.swing.JLabel LabelMax1;
-    private javax.swing.JLabel LabelMin;
     private javax.swing.JLabel LabelModelo;
     private javax.swing.JLabel LabelModelo12;
     private javax.swing.JLabel LabelModelo13;
@@ -2234,7 +2216,6 @@ public class CadastroProdutoNew extends javax.swing.JFrame {
     private javax.swing.JTextField TextMarca;
     private javax.swing.JTextField TextMax;
     private javax.swing.JTextField TextMax1;
-    private javax.swing.JTextField TextMin;
     private javax.swing.JTextField TextModelo;
     private javax.swing.JTextField TextModelo12;
     private javax.swing.JTextField TextModelo13;
