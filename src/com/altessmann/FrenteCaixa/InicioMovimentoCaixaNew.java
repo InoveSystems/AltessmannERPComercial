@@ -340,7 +340,7 @@ public class InicioMovimentoCaixaNew extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextCodigo2ActionPerformed
 
     private void jTextCodigo3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextCodigo3ActionPerformed
-        System.out.println("teste");
+      
     }//GEN-LAST:event_jTextCodigo3ActionPerformed
 
     private void jTextCodigo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextCodigo4ActionPerformed
