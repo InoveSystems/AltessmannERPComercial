@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.altessmann.RetaguardaAdministrativoFinanceiro;
+package com.altessmann.RetaguardaAdministrativoPessoal;
 
 /**
  *
  * @author Ritiele Aldeburg
  */
-public class BancoNew extends javax.swing.JFrame {
+public class OperadoraPlanoSaudeNew extends javax.swing.JFrame {
 
     /**
-     * Creates new form BancoNeww
+     * Creates new form OperadoraPlanoSaudeNew
      */
-    public BancoNew() {
+    public OperadoraPlanoSaudeNew() {
         initComponents();
     }
 
@@ -46,10 +46,11 @@ public class BancoNew extends javax.swing.JFrame {
         LabelValorCus115 = new javax.swing.JLabel();
         TextValorCusto133 = new javax.swing.JTextField();
         TextValorCusto134 = new javax.swing.JTextField();
+        jButtonNovo6 = new javax.swing.JButton();
+        TextValorCusto137 = new javax.swing.JTextField();
         LabelValorCus117 = new javax.swing.JLabel();
         TextValorCusto135 = new javax.swing.JTextField();
         LabelValorCus119 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
@@ -62,11 +63,11 @@ public class BancoNew extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Codigo", "Nome", "Url"
+                "Registro Ans", "Nome"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false
+                false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -148,17 +149,17 @@ public class BancoNew extends javax.swing.JFrame {
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(3, 3, 3)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 229, Short.MAX_VALUE)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 188, Short.MAX_VALUE)
                 .addGap(5, 5, 5))
         );
 
-        jTabbedPane3.addTab("  Pesquisar Banco  ", jPanel4);
+        jTabbedPane3.addTab("  Pesquisar Operadora  ", jPanel4);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "  Banco  ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 14))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "  Operadora Plano de Saude  ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 14))); // NOI18N
 
         jButtonNovo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jButtonNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/add2.png"))); // NOI18N
-        jButtonNovo.setText("Novo Banco");
+        jButtonNovo.setText("Novo Plano");
         jButtonNovo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jButtonNovo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -221,7 +222,7 @@ public class BancoNew extends javax.swing.JFrame {
                 .addComponent(jButtonGravar)
                 .addGap(3, 3, 3)
                 .addComponent(jButtonGravar1)
-                .addContainerGap(11, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -239,7 +240,7 @@ public class BancoNew extends javax.swing.JFrame {
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "  Detalhes  ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 14))); // NOI18N
 
         LabelValorCus115.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        LabelValorCus115.setText("Codigo:");
+        LabelValorCus115.setText("Conta Contabil:");
 
         TextValorCusto133.setEditable(false);
         TextValorCusto133.setBackground(new java.awt.Color(255, 255, 255));
@@ -263,8 +264,28 @@ public class BancoNew extends javax.swing.JFrame {
             }
         });
 
+        jButtonNovo6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jButtonNovo6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/add2.png"))); // NOI18N
+        jButtonNovo6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButtonNovo6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonNovo6ActionPerformed(evt);
+            }
+        });
+
+        TextValorCusto137.setEditable(false);
+        TextValorCusto137.setBackground(new java.awt.Color(255, 255, 255));
+        TextValorCusto137.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        TextValorCusto137.setForeground(new java.awt.Color(153, 153, 153));
+        TextValorCusto137.setMaximumSize(new java.awt.Dimension(1000, 10000));
+        TextValorCusto137.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TextValorCusto137ActionPerformed(evt);
+            }
+        });
+
         LabelValorCus117.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        LabelValorCus117.setText("Url:");
+        LabelValorCus117.setText("Registro Ans:");
 
         TextValorCusto135.setEditable(false);
         TextValorCusto135.setBackground(new java.awt.Color(255, 255, 255));
@@ -286,20 +307,25 @@ public class BancoNew extends javax.swing.JFrame {
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(5, 5, 5)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(LabelValorCus115)
-                    .addComponent(TextValorCusto133, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(LabelValorCus115, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(TextValorCusto133, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(3, 3, 3)
+                        .addComponent(jButtonNovo6))
+                    .addComponent(LabelValorCus117)
+                    .addComponent(TextValorCusto137, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(TextValorCusto134, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(TextValorCusto134, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(TextValorCusto135, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(5, 5, 5))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addComponent(LabelValorCus119)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(LabelValorCus117)
-                    .addComponent(TextValorCusto135, javax.swing.GroupLayout.PREFERRED_SIZE, 282, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(5, 5, 5))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -307,29 +333,24 @@ public class BancoNew extends javax.swing.JFrame {
                 .addGap(5, 5, 5)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(LabelValorCus115)
-                            .addComponent(LabelValorCus119, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(LabelValorCus117, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(LabelValorCus115)
                         .addGap(1, 1, 1)
-                        .addComponent(TextValorCusto133, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(TextValorCusto134, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(TextValorCusto135, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButtonNovo6, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
+                            .addComponent(TextValorCusto133, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(TextValorCusto134, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LabelValorCus117, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LabelValorCus119, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(TextValorCusto135, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(TextValorCusto137, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 89, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -342,10 +363,6 @@ public class BancoNew extends javax.swing.JFrame {
                     .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(5, 5, 5))
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(5, 5, 5))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -353,13 +370,11 @@ public class BancoNew extends javax.swing.JFrame {
                 .addGap(5, 5, 5)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5))
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
-        jTabbedPane3.addTab("  Banco Detalhes  ", jPanel5);
+        jTabbedPane3.addTab("  Operadora Detalhes  ", jPanel5);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -369,7 +384,7 @@ public class BancoNew extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane3)
+            .addComponent(jTabbedPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -523,6 +538,14 @@ public class BancoNew extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TextValorCusto134ActionPerformed
 
+    private void jButtonNovo6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonNovo6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonNovo6ActionPerformed
+
+    private void TextValorCusto137ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextValorCusto137ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextValorCusto137ActionPerformed
+
     private void TextValorCusto135ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextValorCusto135ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TextValorCusto135ActionPerformed
@@ -544,21 +567,20 @@ public class BancoNew extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(BancoNew.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(OperadoraPlanoSaudeNew.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(BancoNew.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(OperadoraPlanoSaudeNew.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(BancoNew.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(OperadoraPlanoSaudeNew.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(BancoNew.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(OperadoraPlanoSaudeNew.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new BancoNew().setVisible(true);
+                new OperadoraPlanoSaudeNew().setVisible(true);
             }
         });
     }
@@ -570,6 +592,7 @@ public class BancoNew extends javax.swing.JFrame {
     private javax.swing.JTextField TextValorCusto133;
     private javax.swing.JTextField TextValorCusto134;
     private javax.swing.JTextField TextValorCusto135;
+    private javax.swing.JTextField TextValorCusto137;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButtonEditar;
@@ -577,9 +600,9 @@ public class BancoNew extends javax.swing.JFrame {
     private javax.swing.JButton jButtonGravar;
     private javax.swing.JButton jButtonGravar1;
     private javax.swing.JButton jButtonNovo;
+    private javax.swing.JButton jButtonNovo6;
     private javax.swing.JButton jButtonPesquisar;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;

@@ -35,7 +35,6 @@ public class CadastroFornecedorNew extends javax.swing.JFrame {
         jButtonPesquisar = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jComboSelecionaTipoPesquisa = new javax.swing.JComboBox();
         jPanel5 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jButtonNovo = new javax.swing.JButton();
@@ -176,10 +175,6 @@ public class CadastroFornecedorNew extends javax.swing.JFrame {
             }
         });
 
-        jComboSelecionaTipoPesquisa.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        jComboSelecionaTipoPesquisa.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Nome", "Situação" }));
-        jComboSelecionaTipoPesquisa.setToolTipText("");
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -189,10 +184,8 @@ public class CadastroFornecedorNew extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jTextPesquisar, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+                        .addComponent(jTextPesquisar, javax.swing.GroupLayout.DEFAULT_SIZE, 563, Short.MAX_VALUE)
                         .addGap(3, 3, 3)
-                        .addComponent(jComboSelecionaTipoPesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButtonPesquisar)
                         .addGap(3, 3, 3)
                         .addComponent(jButton3)
@@ -205,9 +198,7 @@ public class CadastroFornecedorNew extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGap(5, 5, 5)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jComboSelecionaTipoPesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextPesquisar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextPesquisar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jButtonPesquisar, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1088,7 +1079,6 @@ public class CadastroFornecedorNew extends javax.swing.JFrame {
     private javax.swing.JButton jButtonNovo5;
     private javax.swing.JButton jButtonNovo6;
     private javax.swing.JButton jButtonPesquisar;
-    private javax.swing.JComboBox jComboSelecionaTipoPesquisa;
     private javax.swing.JComboBox jComboSelecionaTipoPesquisa10;
     private javax.swing.JComboBox jComboSelecionaTipoPesquisa11;
     private javax.swing.JComboBox jComboSelecionaTipoPesquisa12;
